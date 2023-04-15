@@ -32,7 +32,7 @@ class Bootstrap
                 call_user_func(array($controller, $metodo));
             }
         } else{
-            throw new Exception('No encontrado');
+            header('Location: ' . BASE_URL . 'error/error');
         }
 
     }
