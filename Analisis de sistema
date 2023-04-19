@@ -1,0 +1,18 @@
+Modelo de negocio: portal de noticias
+Procesos de negocio: publicar noticias, catalogar noticias, autorizar publicaciones, leer noticias, buscar noticias, administrar sistema (roles, usuarios, nuevos elementos)
+restricciones negocio: controlar accesos y permisos
+
+Identificar: 
+1. Actores: usuarios
+   - Lector
+   - Periodista
+   - Editor
+   - Administrador
+2. Objetos y conceptos
+   - Noticia
+   - Categoria
+   - Autor
+   - Rol
+   - Usuario
+   - Imagen
+   - Video
