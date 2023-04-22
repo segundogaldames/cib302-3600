@@ -4,9 +4,9 @@ class Bootstrap
 {
     public static function run(Request $peticion)
     {
-        $controller = $peticion->getControlador() . 'Controller';
+        $controller = $peticion->getController() . 'Controller';
         $rutaControlador = ROOT . 'controllers' . DS . $controller . '.php';
-        $metodo = $peticion->getMetodo();
+        $metodo = $peticion->getMethod();
         $args = $peticion->getArgs();
 
         if(is_readable($rutaControlador))
