@@ -1,0 +1,32 @@
+<!--Seccion de contenido principal-->
+<!--Seccion de contenido principal-->
+<section class="container">
+    <div>
+        <ul class="nav-lateral">
+            <li>
+                <a href="<?= $_layoutParams['root'] ?>roles">Roles</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        Contenidos
+        <h1>Lenguajes de Programación</h1>
+        <ul>
+            <li>PHP</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <h2>Ejemplo de id</h2>
+        <p class="texto1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ut quasi accusamus commodi pariatur eius
+            similique quibusdam maiores, facilis sapiente sit ad dolores, exercitationem quis dolor provident fugiat
+            quod quia!
+        </p>
+        <p id="parrafo2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio molestiae natus qui sed rerum
+            obcaecati! Architecto, facere ullam. Corrupti accusantium distinctio dolores doloribus dolorum beatae quis
+            nesciunt repellat hic.
+        </p>
+    </div>
+
+</section>

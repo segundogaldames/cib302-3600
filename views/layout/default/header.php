@@ -19,10 +19,10 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html">Inicio</a>
+                <a href="<?= $_layoutParams['root'] ?>">Inicio</a>
             </li>
             <li>
-                <a href="#">Acerca de</a>
+                <a href="<?= $_layoutParams['root'] ?>about">Acerca de</a>
             </li>
             <li>
                 <a href="#">Contacto</a>

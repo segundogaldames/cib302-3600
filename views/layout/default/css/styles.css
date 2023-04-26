@@ -64,6 +64,28 @@ p{
     text-align: justify;
 }
 
+.btn{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+}
+.btn-success{
+    background-color: blue;
+}
+.btn-success:hover{
+    background-color: rgb(92, 92, 245);
+}
 /* estilos clases */
 .container{
     display: grid;
@@ -89,6 +111,12 @@ p{
 }
 .texto1{
     color:maroon;
+}
+.text-error{
+    color:blue;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-left: 10px;
 }
 .text-footer{
     margin-top: 10px;
