@@ -1,0 +1,97 @@
+/*Lista de estilos generales*/
+article{
+    width: 70%;
+}
+aside{
+    width: 30%;
+}
+article,aside, footer{
+    float: left;
+    margin-top: 0.625rem;
+    border: 1px solid;
+}
+footer{
+    width: 100%;
+    height: 4rem;
+    background-color: mistyrose;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: royalblue;
+    margin-bottom: 10px;
+}
+header{
+    height: 450px;
+    background-color:whitesmoke;
+    padding: 10px;
+    background-image: url("../img/fondo-header.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 35%;
+}
+nav{
+    height: 35px;
+    padding: 5px;
+    background-color: slategrey;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color:snow;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+nav ul li a:hover{
+    color: slategrey;
+    background-color: snow;
+}
+p{
+    text-align: left;
+}
+/* section{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/* estilos id */
+#parrafo2{
+    text-align: justify;
+}
+
+/* estilos clases */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 0.5em;
+    padding: 1em;
+}
+.col-footer{
+    display: inline-block;
+    width: 20%;
+}
+.col-footer-max{
+    width: 59%;
+}
+.error{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px;
+}
+.footer{
+    margin: 0.625rem;
+}
+.texto1{
+    color:maroon;
+}
+.text-footer{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+}

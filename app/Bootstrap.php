@@ -16,7 +16,7 @@ class Bootstrap
 
             if (is_callable(array($controller, $metodo)))
             {
-                $metodo = $peticion->getMetodo();
+                $metodo = $peticion->getMethod();
             }
             else
             {
