@@ -11,4 +11,5 @@ define('HASH_KEY','jbtZrAExR8H7CPI5yQWEzZ3O8H0JsMRIzNggZwLTlxSO8B+qjHNC22gognwRs
 define('DB_HOST','localhost');
 define('DB_USER','root');
 define('DB_PASS','1234');
-define('DB_NAME','');
+define('DB_NAME','cib3023600');
+define('DB_CHAR','utf8');

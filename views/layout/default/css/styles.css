@@ -1,4 +1,7 @@
 /*Lista de estilos generales*/
+body{
+    font-family: 'Roboto Mono', monospace;
+}
 article{
     width: 70%;
 }
@@ -15,8 +18,14 @@ footer{
     height: 4rem;
     background-color: mistyrose;
 }
+h1{
+    font-size: 2.2em;
+    font-family: 'Nunito', sans-serif;
+}
 h2{
     font-size: 2rem;
+}
+h1, h2{
     font-weight: bold;
     color: royalblue;
     margin-bottom: 10px;
@@ -80,11 +89,17 @@ p{
     -ms-border-radius: 5px 5px 5px 5px;
     -o-border-radius: 5px 5px 5px 5px;
 }
-.btn-success{
+.btn-primary{
     background-color: blue;
 }
+.btn-primary:hover{
+    background-color: rgb(67, 67, 240);
+}
+.btn-success{
+    background-color: rgb(39, 232, 13);
+}
 .btn-success:hover{
-    background-color: rgb(92, 92, 245);
+    background-color: rgb(92, 245, 97);
 }
 /* estilos clases */
 .container{
@@ -109,8 +124,25 @@ p{
 .footer{
     margin: 0.625rem;
 }
+.table{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+}
+.table th{
+
+    font-weight: bold;
+}
+.table th, td{
+    padding: 0.9em;
+    margin: 2px;
+    width: auto;
+}
 .texto1{
     color:maroon;
+}
+.text-danger{
+    color: red;
 }
 .text-error{
     color:blue;
@@ -122,4 +154,9 @@ p{
     margin-top: 10px;
     margin-left: 10px;
     display: block;
+}
+.text-info{
+    color:darkcyan;
+    display: block;
+    margin: 3px;
 }
