@@ -72,6 +72,15 @@ p{
 #parrafo2{
     text-align: justify;
 }
+.alert-danger{
+    background-color: rgb(249, 205, 205);
+    color: crimson;
+    width: auto;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.4em;
+    padding-left: 0.2em;
+}
 
 .btn{
     padding: 10px;
@@ -81,8 +90,9 @@ p{
     width: auto;
     color: aliceblue;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bolder;
+    border: 0px;
     border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -124,6 +134,28 @@ p{
 .footer{
     margin: 0.625rem;
 }
+.form{
+    width: 60%;
+    display: inline-block;
+}
+.form label{
+    margin-bottom: 5px;
+    display: block;
+}
+.form-control{
+    width: 100%;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -ms-border-radius: 3px 3px 3px 3px;
+    -o-border-radius: 3px 3px 3px 3px;
+}
+.form-group{
+    margin-bottom: 5px;
+}
+
 .table{
     width: 100%;
     display: inline-block;
