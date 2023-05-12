@@ -75,15 +75,20 @@ p{
 .alert-danger{
     background-color: rgb(249, 205, 205);
     color: crimson;
+}
+.alert-success{
+    background-color: greenyellow;
+    color: green;
+}
+.alert-danger, .alert-success{
     width: auto;
     padding-top: 0.7em;
     padding-bottom: 0.5em;
     margin-bottom: 0.4em;
     padding-left: 0.2em;
 }
-
 .btn{
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     text-align: center;
     display: inline-block;
@@ -110,6 +115,15 @@ p{
 }
 .btn-success:hover{
     background-color: rgb(92, 245, 97);
+}
+.btn-outline-primary{
+    background-color: transparent;
+    color: blue;
+    border: blue 1px solid;
+}
+.btn-outline-primary:hover{
+    background-color: rgb(67, 67, 240);
+    color: aliceblue;
 }
 /* estilos clases */
 .container{

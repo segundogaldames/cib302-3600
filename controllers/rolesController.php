@@ -34,11 +34,37 @@ class rolesController extends Controller
             if (!$this->getTexto('nombre')) {
                 Session::set('msg_error','Debe ingresar el nombre del rol');
                 $this->redireccionar('roles/create');
+            }
 
+            $rol = $this->_rol->getRolNombre(ucfirst($this->getTexto('nombre')));
+
+            if ($rol) {
+                Session::set('msg_error','El rol ingresado ya existe... intente con otro');
+                $this->redireccionar('roles/create');
+            }
+
+            $rol = $this->_rol->addRol(ucfirst($this->getTexto('nombre')));
+
+            if ($rol) {
+                Session::set('msg_success','El rol se ha registrado correctamente');
+                $this->redireccionar('roles');
             }
         }else {
             throw new Exception("Error Processing Request", 1);
 
         }
+    }
+
+    public function show($id = null)
+    {
+        $rol = $this->_rol->getRolId($this->filtrarInt($id));
+
+        if (!$rol) {
+            $this->redireccionar('error/error');
+        }
+
+        $this->_view->titulo = 'Roles';
+        $this->_view->rol = $rol;
+        $this->_view->render('show');
     }
 }

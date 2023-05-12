@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Mono:wght@200;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="<?= $_layoutParams['ruta_css'] ?>styles.css">
+
 </head>
 
 <body>
