@@ -1,6 +1,6 @@
 <?php
 #archivo de configuraciones basicas
-define('BASE_URL','http://localhost:8080/cib302-3600/');
+define('BASE_URL','http://localhost/cib302-3600/');
 define('DEFAULT_CONTROLLER','index');
 define('DEFAULT_LAYOUT','default');
 
@@ -10,6 +10,6 @@ define('HASH_KEY','jbtZrAExR8H7CPI5yQWEzZ3O8H0JsMRIzNggZwLTlxSO8B+qjHNC22gognwRs
 #configuracion de credenciales de usuario
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASS','1234');
+define('DB_PASS','root.1234');
 define('DB_NAME','cib3023600');
 define('DB_CHAR','utf8');
