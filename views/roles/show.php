@@ -38,7 +38,9 @@
                 <td><?= $this->rol['updated_at'] ?></td>
             </tr>
         </table>
-
+        <p>
+            <a href="<?= $_layoutParams['root'] ?>roles" class="btn btn-primary">Volver</a>
+        </p>
     </div>
 
 </section>
