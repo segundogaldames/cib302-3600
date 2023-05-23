@@ -10,7 +10,7 @@ class usuarioModel extends Model
     public function getUsuarios()
     {
         $usuarios = $this->_db->query("SELECT u.id, u.run, u.nombre, r.nombre as rol, u.activo FROM usuarios u INNER JOIN roles r ON u.rol_id = r.id ORDER BY u.id DESC");
-        return $roles->fetchall();
+        return $usuarios->fetchall();
     }
 
     public function getUsuarioId($id)
@@ -21,7 +21,7 @@ class usuarioModel extends Model
         $usuario->bindParam(1, $id);
         $usuario->execute();
 
-        return $rol->fetch();
+        return $usuario->fetch();
     }
 
     public function getUsuarioRun($run)
@@ -33,17 +33,23 @@ class usuarioModel extends Model
         return $usuario->fetch();
     }
 
-    public function addUsuario($nombre)
+    public function addUsuario($run, $nombre, $email, $password, $rol)
     {
-        $rol = $this->_db->prepare("INSERT INTO roles(nombre, created_at, updated_at) VALUES(?, now(), now())");
-        $rol->bindParam(1, $nombre);
-        $rol->execute();
+        $rol = (int) $rol;
 
-        $row = $rol->rowCount();
+        $usuario = $this->_db->prepare("INSERT INTO usuarios(run, nombre, email, password, activo, rol_id, created_at, updated_at) VALUES(?, ?, ?, ?, 1, ?, now(), now())");
+        $usuario->bindParam(1, $run);
+        $usuario->bindParam(2, $nombre);
+        $usuario->bindParam(3, $email);
+        $usuario->bindParam(4, $password);
+        $usuario->bindParam(5, $rol);
+        $usuario->execute();
+
+        $row = $usuario->rowCount();
         return $row;
     }
 
-    public function editRol($id, $nombre)
+    public function editUsuario($id, $nombre, $email, $activo, $rol)
     {
         $id = (int) $id;
 
